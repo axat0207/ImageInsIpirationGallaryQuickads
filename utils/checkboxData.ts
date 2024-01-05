@@ -39,17 +39,13 @@
 
 
 export const categories = [
-    'Bag',
     'Beverage',
-    'Books',
     'Candle',
     'Cosmetics',
     'Fashion',
     'Furniture',
     'Home Appliances',
     'Home Decor',
-    'Homeware',
-    'Jewelry',
     'Kitchenware',
     'Musical Instruments',
     'Outdoor Gear',

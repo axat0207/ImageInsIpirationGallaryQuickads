@@ -30,19 +30,22 @@ const PortfolioItem: React.FC<PortfolioItemProps> = ({
   const descriptionStyle: React.CSSProperties = {
     position: 'absolute',
     top: '0',
+    left: '0',
     width: '100%',
-    height: `${imageHeight}px`, // Set the height based on the image's height
+    height: '100%',
     opacity: isHovered ? 1 : 0,
     backgroundColor: 'rgba(0, 0, 0, 0.5)',
     color: 'white',
     textAlign: 'center',
-    padding: '20px',
     transition: 'opacity 0.3s ease-in-out',
     display: 'flex',
     flexDirection: 'column',
     justifyContent: 'center',
     alignItems: 'center',
+    
   };
+  
+  
 
   const copyToClipboard = () => {
     navigator.clipboard.writeText(prompt);
