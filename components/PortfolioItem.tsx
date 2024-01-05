@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
-import { FaRegCopy } from "react-icons/fa6";
-
+import { FaRegCopy } from 'react-icons/fa';
 
 interface PortfolioItemProps {
   imageSrc: string;
@@ -15,6 +14,7 @@ const PortfolioItem: React.FC<PortfolioItemProps> = ({
 }) => {
   const [isHovered, setIsHovered] = useState(false);
   const [isCopied, setIsCopied] = useState(false);
+  const [imageHeight, setImageHeight] = useState(0);
 
   const itemStyle: React.CSSProperties = {
     position: 'relative',
@@ -31,7 +31,7 @@ const PortfolioItem: React.FC<PortfolioItemProps> = ({
     position: 'absolute',
     top: '0',
     width: '100%',
-    height: '100%',
+    height: `${imageHeight}px`, // Set the height based on the image's height
     opacity: isHovered ? 1 : 0,
     backgroundColor: 'rgba(0, 0, 0, 0.5)',
     color: 'white',
@@ -52,6 +52,11 @@ const PortfolioItem: React.FC<PortfolioItemProps> = ({
     }, 500);
   };
 
+  const handleImageLoaded = (e: React.SyntheticEvent<HTMLImageElement, Event>) => {
+    const target = e.target as HTMLImageElement;
+    setImageHeight(target.height);
+  };
+
   return (
     <div
       className="portfolio-item rounded-2xl"
@@ -59,7 +64,13 @@ const PortfolioItem: React.FC<PortfolioItemProps> = ({
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
     >
-      <img className="rounded-2xl" src={imageSrc} alt={filter} style={imageStyle} />
+      <img
+        className="rounded-2xl"
+        src={imageSrc}
+        alt={filter}
+        style={imageStyle}
+        onLoad={handleImageLoaded} // Capture image's height on load
+      />
       <div style={descriptionStyle}>
         {isHovered && (
           <>
@@ -72,14 +83,22 @@ const PortfolioItem: React.FC<PortfolioItemProps> = ({
                 right: '20px',
                 fontSize: '24px',
               }}
-  
-            ><FaRegCopy /></div>
-            {isCopied && <span style={{
-                cursor: 'pointer',
-                position: 'absolute',
-                top: '50px',
-                right: '20px',
-              }}> Copied to clipboard!</span>}
+            >
+              <FaRegCopy />
+            </div>
+            {isCopied && (
+              <span
+                style={{
+                  cursor: 'pointer',
+                  position: 'absolute',
+                  top: '50px',
+                  right: '20px',
+                }}
+              >
+                {' '}
+                Copied to clipboard!
+              </span>
+            )}
           </>
         )}
         <p>{prompt}</p>
