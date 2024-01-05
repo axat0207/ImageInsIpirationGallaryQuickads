@@ -29,8 +29,9 @@ const PortfolioPage: React.FC = () => {
       });
     }
   };
-
-  //   const categories = ["nature", "cars", "people"]; // Update to lowercase for consistency
+  
+  
+  
 
   const filteredItems =
     activeFilters.length === 0
@@ -46,7 +47,7 @@ const PortfolioPage: React.FC = () => {
       <div className="flex flex-1 overflow-hidden">
         {/* Fixed Sidebar for Filter Buttons */}
         <div className="w-1/5  p-4 overflow-y-auto">
-          <FilterButtons categories={categories} handleFilter={handleFilter} />
+          <FilterButtons setActiveFilters={setActiveFilters} categories={categories} handleFilter={handleFilter} />
         </div>
 
         {/* Scrollable Image Gallery */}
