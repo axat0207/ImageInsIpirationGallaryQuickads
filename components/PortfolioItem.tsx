@@ -1,4 +1,6 @@
 import React, { useState } from 'react';
+import { FaRegCopy } from "react-icons/fa6";
+
 
 interface PortfolioItemProps {
   imageSrc: string;
@@ -12,6 +14,7 @@ const PortfolioItem: React.FC<PortfolioItemProps> = ({
   prompt,
 }) => {
   const [isHovered, setIsHovered] = useState(false);
+  const [isCopied, setIsCopied] = useState(false);
 
   const itemStyle: React.CSSProperties = {
     position: 'relative',
@@ -26,16 +29,27 @@ const PortfolioItem: React.FC<PortfolioItemProps> = ({
 
   const descriptionStyle: React.CSSProperties = {
     position: 'absolute',
-    top: '50%',
-    left: '50%',
-    transform: 'translate(-50%, -50%)',
+    top: '0',
+    width: '100%',
+    height: '100%',
     opacity: isHovered ? 1 : 0,
-    backgroundColor: 'rgba(0, 0, 0, 0.8)',
+    backgroundColor: 'rgba(0, 0, 0, 0.5)',
     color: 'white',
     textAlign: 'center',
     padding: '20px',
     transition: 'opacity 0.3s ease-in-out',
-    width: '80%',
+    display: 'flex',
+    flexDirection: 'column',
+    justifyContent: 'center',
+    alignItems: 'center',
+  };
+
+  const copyToClipboard = () => {
+    navigator.clipboard.writeText(prompt);
+    setIsCopied(true);
+    setTimeout(() => {
+      setIsCopied(false);
+    }, 500);
   };
 
   return (
@@ -45,9 +59,29 @@ const PortfolioItem: React.FC<PortfolioItemProps> = ({
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
     >
-      <img className='rounded-2xl' src={imageSrc} alt={filter} style={imageStyle} />
+      <img className="rounded-2xl" src={imageSrc} alt={filter} style={imageStyle} />
       <div style={descriptionStyle}>
-        <h3>{filter}</h3>
+        {isHovered && (
+          <>
+            <div
+              onClick={copyToClipboard}
+              style={{
+                cursor: 'pointer',
+                position: 'absolute',
+                top: '20px',
+                right: '20px',
+                fontSize: '24px',
+              }}
+  
+            ><FaRegCopy /></div>
+            {isCopied && <span style={{
+                cursor: 'pointer',
+                position: 'absolute',
+                top: '50px',
+                right: '20px',
+              }}> Copied to clipboard!</span>}
+          </>
+        )}
         <p>{prompt}</p>
       </div>
     </div>
