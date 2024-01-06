@@ -2,7 +2,7 @@
 "use client";
 import { RxHamburgerMenu } from "react-icons/rx";
 
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import Header from "../components/Header";
 import FilterButtons from "../components/FilterButtons";
 import PortfolioItem from "../components/PortfolioItem";
@@ -17,15 +17,11 @@ import {
   SheetTitle,
   SheetTrigger,
 } from "@/components/ui/sheet";
-interface PortfolioItemProp {
-  filter: string;
-  imageSrc: string;
-  Prompt: string;
-}
 
 const PortfolioPage: React.FC = () => {
   const [activeFilters, setActiveFilters] = useState<string[]>([]);
   const [items, setItems] = useState(imageArray);
+
   const handleFilter = (filter: string) => {
     if (filter === "all") {
       setActiveFilters([]); // Reset filters if 'all' is selected
@@ -47,13 +43,9 @@ const PortfolioPage: React.FC = () => {
 
   return (
     <div className="">
-      {/* Fixed Header */}
       <Header />
-
-      {/* Flex layout for Filter Buttons and Image Gallery */}
-
       <div className="flex flex-1 overflow-hidden">
-        {/* Fixed Sidebar for Filter Buttons */}
+        {/* Sidebar */}
         <div className="w-1/5 hidden lg:block  p-4 overflow-y-auto">
           <FilterButtons
             setActiveFilters={setActiveFilters}
@@ -78,32 +70,38 @@ const PortfolioPage: React.FC = () => {
             product in Quickads.
           </div>
           <div className="flex lg:hidden justify-between items-center px-5 mx-4 py-1 my-4 text-slate-700  border border-gray-400  rounded-md">
-          <Sheet>
-          <SheetTrigger><RxHamburgerMenu /></SheetTrigger>
-          <SheetContent side={"left"}>
-            <SheetHeader>
-              <SheetTitle>Filters By Product Categories</SheetTitle>
-              <SheetDescription>
-                <div className="flex flex-col space-y-2 py-4">
-                  {/* <label className="block font-bold">Filter by Category:</label> */}
-                  {categories.map((category, index) => (
-                    <div key={index} className="flex items-center space-x-2">
-                      <input
-                        type="checkbox"
-                        id={`category-${index}`}
-                        value={category}
-                        // onChange={handleCheckboxChange}
-                      />
-                      <label htmlFor={`category-${index}`}>{category}</label>
+            {/* side bar for small screen  */}
+            <Sheet>
+              <SheetTrigger>
+                <RxHamburgerMenu />
+              </SheetTrigger>
+              <SheetContent side={"left"}>
+                <SheetHeader>
+                  <SheetTitle>Filters By Product Categories</SheetTitle>
+                  <SheetDescription>
+                    <div className="flex flex-col space-y-2 py-4">
+                      {/* <label className="block font-bold">Filter by Category:</label> */}
+                      {categories.map((category, index) => (
+                        <div
+                          key={index}
+                          className="flex items-center space-x-2"
+                        >
+                          <input
+                            type="checkbox"
+                            id={`category-${index}`}
+                            value={category}
+                            // onChange={handleCheckboxChange}
+                          />
+                          <label htmlFor={`category-${index}`}>
+                            {category}
+                          </label>
+                        </div>
+                      ))}
                     </div>
-                  ))}
-                </div>
-              </SheetDescription>
-            </SheetHeader>
-          </SheetContent>
-
-            
-          </Sheet>
+                  </SheetDescription>
+                </SheetHeader>
+              </SheetContent>
+            </Sheet>
             <div>Filter by Product, theme etc.</div>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">

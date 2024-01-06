@@ -1,5 +1,5 @@
-import React, { useState } from 'react';
-import { FaRegCopy } from 'react-icons/fa';
+import React, { useState } from "react";
+import { FaRegCopy } from "react-icons/fa";
 
 interface PortfolioItemProps {
   imageSrc: string;
@@ -16,35 +16,32 @@ const PortfolioItem: React.FC<PortfolioItemProps> = ({
   const [isCopied, setIsCopied] = useState(false);
   const [imageHeight, setImageHeight] = useState(0);
   const itemStyle: React.CSSProperties = {
-    position: 'relative',
-    overflow: 'hidden',
+    position: "relative",
+    overflow: "hidden",
   };
 
   const imageStyle: React.CSSProperties = {
-    width: '100%',
-    height: 'auto',
-    display: 'block',
+    width: "100%",
+    height: "auto",
+    display: "block",
   };
 
   const descriptionStyle: React.CSSProperties = {
-    position: 'absolute',
-    top: '0',
-    left: '0',
-    width: '100%',
-    height: '100%',
+    position: "absolute",
+    top: "0",
+    left: "0",
+    width: "100%",
+    height: "100%",
     opacity: isHovered ? 1 : 0,
-    backgroundColor: 'rgba(0, 0, 0, 0.5)',
-    color: 'white',
-    textAlign: 'center',
-    transition: 'opacity 0.3s ease-in-out',
-    display: 'flex',
-    flexDirection: 'column',
-    justifyContent: 'center',
-    alignItems: 'center',
-    
+    backgroundColor: "rgba(0, 0, 0, 0.5)",
+    color: "white",
+    textAlign: "center",
+    transition: "opacity 0.3s ease-in-out",
+    display: "flex",
+    flexDirection: "column",
+    justifyContent: "center",
+    alignItems: "center",
   };
-  
-  
 
   const copyToClipboard = () => {
     navigator.clipboard.writeText(prompt);
@@ -54,7 +51,9 @@ const PortfolioItem: React.FC<PortfolioItemProps> = ({
     }, 500);
   };
 
-  const handleImageLoaded = (e: React.SyntheticEvent<HTMLImageElement, Event>) => {
+  const handleImageLoaded = (
+    e: React.SyntheticEvent<HTMLImageElement, Event>
+  ) => {
     const target = e.target as HTMLImageElement;
     setImageHeight(target.naturalHeight);
   };
@@ -79,11 +78,11 @@ const PortfolioItem: React.FC<PortfolioItemProps> = ({
             <div
               onClick={copyToClipboard}
               style={{
-                cursor: 'pointer',
-                position: 'absolute',
-                top: '20px',
-                right: '20px',
-                fontSize: '24px',
+                cursor: "pointer",
+                position: "absolute",
+                top: "20px",
+                right: "20px",
+                fontSize: "24px",
               }}
             >
               <FaRegCopy />
@@ -91,13 +90,12 @@ const PortfolioItem: React.FC<PortfolioItemProps> = ({
             {isCopied && (
               <span
                 style={{
-                  cursor: 'pointer',
-                  position: 'absolute',
-                  top: '50px',
-                  right: '20px',
+                  cursor: "pointer",
+                  position: "absolute",
+                  top: "50px",
+                  right: "20px",
                 }}
               >
-                {' '}
                 Copied to clipboard!
               </span>
             )}

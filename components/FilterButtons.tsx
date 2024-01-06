@@ -1,12 +1,4 @@
 import { useState } from "react";
-import {
-  Sheet,
-  SheetContent,
-  SheetDescription,
-  SheetHeader,
-  SheetTitle,
-  SheetTrigger,
-} from "@/components/ui/sheet";
 
 interface FilterButtonsProps {
   categories: string[];
@@ -18,7 +10,7 @@ const FilterButtons: React.FC<FilterButtonsProps> = ({
   handleFilter,
   setActiveFilters,
 }) => {
-  const [prevFilters, setPrevFilters] = useState<string[]>([]); // Add this line
+  const [prevFilters, setPrevFilters] = useState<string[]>([]); 
 
   const handleCheckboxChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const { value, checked } = e.target;
@@ -40,7 +32,7 @@ const FilterButtons: React.FC<FilterButtonsProps> = ({
 
   return (
     <>
-           <div className="hidden md:block fixed z-40 mt-20">
+      <div className="hidden md:block fixed z-40 mt-20">
         <div className="flex flex-col  space-y-2 py-4 ">
           <label className="block font-bold">Filter Product Category:</label>
           {categories.map((category, index) => (
