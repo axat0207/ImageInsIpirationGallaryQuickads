@@ -46,7 +46,7 @@ const PortfolioPage: React.FC = () => {
       : items.filter((item) => activeFilters.includes(item.Filter));
 
   return (
-    <div className="h-screen">
+    <div className="">
       {/* Fixed Header */}
       <Header />
 
@@ -63,7 +63,7 @@ const PortfolioPage: React.FC = () => {
         </div>
 
         {/* Scrollable Image Gallery */}
-        <div className="flex-1 overflow-y-auto px-4">
+        <div className="flex-1 overflow-y-auto px-4 mt-36 md:mt-24  ">
           <div className="text-center text-4xl md:text-6xl mt-6 mb-4 font-bold">
             Find your next winning shot
           </div>
@@ -82,10 +82,10 @@ const PortfolioPage: React.FC = () => {
           <SheetTrigger><RxHamburgerMenu /></SheetTrigger>
           <SheetContent side={"left"}>
             <SheetHeader>
-              <SheetTitle>Filter By Product Categories</SheetTitle>
+              <SheetTitle>Filters By Product Categories</SheetTitle>
               <SheetDescription>
                 <div className="flex flex-col space-y-2 py-4">
-                  <label className="block font-bold">Filter by Category:</label>
+                  {/* <label className="block font-bold">Filter by Category:</label> */}
                   {categories.map((category, index) => (
                     <div key={index} className="flex items-center space-x-2">
                       <input

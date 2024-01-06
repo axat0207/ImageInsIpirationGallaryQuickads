@@ -3,11 +3,11 @@ import Image from "next/image";
 // Header.tsx
 const Header: React.FC = () => {
   return (
-    <div className="">
+    <div className="fixed top-0 w-full z-50  bg-white">
 
 
       <header className="text-gray-600 body-font ">
-        <div className="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
+        <div className="container mx-auto flex justify-between p-5 flex-col md:flex-row items-center">
           <a
             href="/"
             className="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0"
@@ -20,7 +20,7 @@ const Header: React.FC = () => {
         />
             
           </a>
-          <nav className="md:ml-auto md:mr-auto flex flex-wrap items-center text-base justify-center">
+          <nav className="md:ml-auto hidden md:mr-auto lg:flex flex-wrap items-center text-base justify-center">
             <ul className="flex flex-wrap gap-6 text-md pt-2">
               <li>Features</li>
               <li>Use Cases</li>
