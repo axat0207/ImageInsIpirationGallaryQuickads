@@ -1,5 +1,5 @@
 import Image from "next/image";
-
+import {quickadsLogo} from '@/utils/constants'
 // Header.tsx
 const Header: React.FC = () => {
   return (
@@ -15,7 +15,7 @@ const Header: React.FC = () => {
               width={200}
               alt="logo"
               src={
-                "https://assets-global.website-files.com/64b11f315314a4ef84c12744/64b6ea3396b81f6613411c51_svg%20logo.svg"
+                "/logo.svg"
               }
             />
           </a>
