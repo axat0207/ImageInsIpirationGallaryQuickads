@@ -17,24 +17,24 @@ export const imageArray = [
         Filter: 'Home Decor',
         Prompt: 'The gaint couch in grand living room with big windows.'
       },
-      {
-        index: 4,
-        imageSrc: 'https://uploads-ssl.webflow.com/64e450ddc010cccff1436923/64f61d5a7a84a7b5f5f21b56_64e29172e551e36f5d692e6e_image12.png',
-        Filter: 'Perfume',
-        Prompt: 'Foundation Bottle P placed on flowers, with soft focus lighting, clean and luxurious.'
-      },
+      // {
+      //   index: 4,
+      //   imageSrc: 'https://uploads-ssl.webflow.com/64e450ddc010cccff1436923/64f61d5a7a84a7b5f5f21b56_64e29172e551e36f5d692e6e_image12.png',
+      //   Filter: 'Perfume',
+      //   Prompt: 'Foundation Bottle P placed on flowers, with soft focus lighting, clean and luxurious.'
+      // },
       {
         index: 5,
         imageSrc: 'https://uploads-ssl.webflow.com/64e450ddc010cccff1436923/64f61d5adcd41611292ad2e3_64e29266e41da63fe4638113_image13.png',
         Filter: 'Skincare and cosmetics',
         Prompt: 'The lake-inspired facewash is showcased against a beautiful lake with flowers.'
       },
-      {
-        "index": 7,
-        "imageSrc": "https://uploads-ssl.webflow.com/64e450ddc010cccff1436923/64f61d5bbf9e3d5ed815fe03_64e292c792befecb2c91cdd6_image15.png",
-        "Filter": "Perfume",
-        "Prompt": "The flower fragrance perfume is showcased with flowers and blissful light."
-      },
+      // {
+      //   "index": 7,
+      //   "imageSrc": "https://uploads-ssl.webflow.com/64e450ddc010cccff1436923/64f61d5bbf9e3d5ed815fe03_64e292c792befecb2c91cdd6_image15.png",
+      //   "Filter": "Perfume",
+      //   "Prompt": "The flower fragrance perfume is showcased with flowers and blissful light."
+      // },
       {
         index: 6,
         imageSrc: 'https://uploads-ssl.webflow.com/64e450ddc010cccff1436923/64f61d5a8c23bec07294c606_64e292a983a623370f53f3ef_image14.png',

@@ -15,7 +15,7 @@ const PortfolioItem: React.FC<PortfolioItemProps> = ({
   const [isHovered, setIsHovered] = useState(false);
   const [isCopied, setIsCopied] = useState(false);
   const [imageHeight, setImageHeight] = useState(0);
-
+console.log(imageHeight + "this is image height")
   const itemStyle: React.CSSProperties = {
     position: 'relative',
     overflow: 'hidden',
@@ -57,7 +57,7 @@ const PortfolioItem: React.FC<PortfolioItemProps> = ({
 
   const handleImageLoaded = (e: React.SyntheticEvent<HTMLImageElement, Event>) => {
     const target = e.target as HTMLImageElement;
-    setImageHeight(target.height);
+    setImageHeight(target.naturalHeight);
   };
 
   return (
