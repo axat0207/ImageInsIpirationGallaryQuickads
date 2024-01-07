@@ -185,11 +185,52 @@ export const imageArray = [
         Filter: 'Watch',
         Prompt: 'The nature-inspired chronograph watch is showcased against a backdrop of majestic mountains.'
       },
-      // {
-      //   index: 32,
-      //   imageSrc: 'https://uploads-ssl.webflow.com/64e450ddc010cccff1436923/64f61d600cd85c0a4fa5f4da_64e29554344c637a5c325e6c_image38.png',
-      //   Filter: 'Beverage',
-      //   Prompt: 'A coffee on a bench is showcased against a backdrop in clear sky.'
-      // },
-    
+      {
+        index: 32,
+        imageSrc: "https://uploads-ssl.webflow.com/64e450ddc010cccff1436923/64f61d625ab09e78f126aa0f_64e290d2eba14476cc65080f_image7.png",
+        Filter: 'Perfume',
+        Prompt: 'The luxury perfume bottle in focus with a glamorous vanity table in the background.'
+      },
+      {
+        index: 33,
+        imageSrc: "https://uploads-ssl.webflow.com/64e450ddc010cccff1436923/64f61d63e65258b9200463d3_64e2911c333767c2739e3444_image9.png",
+        Filter: 'Home Decor',
+        Prompt: 'Decorative Cushions Parranged on a plush sofa, with patterned throws'
+      },
+      {
+        index: 34,
+        imageSrc: "https://uploads-ssl.webflow.com/64e450ddc010cccff1436923/64f61d6287a4946a08d98087_64e290f5b109859bb179ab3d_image8.png",
+        Filter: 'Beverage',
+        Prompt: 'The craft beer bottle in focus with a hip brewery tasting room in the background'
+      },
+      {
+        index: 35,
+        imageSrc: "https://uploads-ssl.webflow.com/64e450ddc010cccff1436923/64f61d62689fbf402b5c0283_64e290af4151507013f3ac36_image6.png",
+        Filter: 'Beverage',
+        Prompt: 'The coffee cup in focus with a cozy coffee shop in the background. '
+      },
+      {
+        index: 36,
+        imageSrc: "https://uploads-ssl.webflow.com/64e450ddc010cccff1436923/64f61d616a09de7d0059d818_64e2906a9d012011ca86cfcb_image5.png",
+        Filter: 'Shoes',
+        Prompt: 'The cozy winter boots in focus with a snowy mountain lodge in the background.'
+      },
+      {
+        index: 37,
+        imageSrc: "https://uploads-ssl.webflow.com/64e450ddc010cccff1436923/64f61d61884d78c150142bc0_64e2958ee073f3902706e3cf_image40.png",
+        Filter: 'Tech & gadgets',
+        Prompt: 'VR Headset being worn by a person in a virtual environment, with digital objects around them, immersive, technology, gaming.'
+      },
+      {
+        index: 38,
+        imageSrc: "https://uploads-ssl.webflow.com/64e450ddc010cccff1436923/64f61d61d30f697e33cb7805_64e290444151507013f35bde_image4.png",
+        Filter: 'Kitchenware',
+        Prompt: 'The chefs cutting board in focus with a professional chefs with kitchcen in background'
+      },
+      {
+        index: 39,
+        imageSrc: "https://uploads-ssl.webflow.com/64e450ddc010cccff1436923/64f61d617926d792ea6efe17_64e295717242c2a9ca71d3d3_image39.png",
+        Filter: 'Sports',
+        Prompt: 'The soccer ball in focus with a soccer field in the background. The field is filled with players, coaches, and cheering fans, capturing the competitive and spirited nature of the game.'
+      },
 ]
