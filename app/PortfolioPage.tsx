@@ -111,6 +111,7 @@ const PortfolioPage: React.FC = () => {
                 imageSrc={item.imageSrc}
                 filter={item.Filter}
                 prompt={item.Prompt}
+                loading="lazy"
               />
             ))}
           </div>

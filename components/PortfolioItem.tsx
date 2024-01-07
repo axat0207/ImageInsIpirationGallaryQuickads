@@ -5,6 +5,7 @@ interface PortfolioItemProps {
   imageSrc: string;
   filter: string;
   prompt: string;
+  loading?: 'lazy' | 'eager';
 }
 
 const PortfolioItem: React.FC<PortfolioItemProps> = ({

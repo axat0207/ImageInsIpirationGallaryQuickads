@@ -3,7 +3,7 @@ export const imageArray = [
         index: 1,
         imageSrc: 'https://uploads-ssl.webflow.com/64e450ddc010cccff1436923/64f61d5abf9e3d5ed815fce9_64e28c2fd1d1b88ce68a36fb_image1.png',
         Filter: 'Furniture',
-        Prompt: 'The wooden stool is showcased in the kitchen with all necessary kitchen items.'
+        Prompt: 'Spotlight a premium brown-black wooden stool against blurred kitchen, surrounded by essential items, golden lamps, and a window.'
       },
       {
         index: 2,
@@ -39,97 +39,97 @@ export const imageArray = [
         index: 6,
         imageSrc: 'https://uploads-ssl.webflow.com/64e450ddc010cccff1436923/64f61d5a8c23bec07294c606_64e292a983a623370f53f3ef_image14.png',
         Filter: 'Fashion',
-        Prompt: 'The nature-inspired chronograph watch is showcased against a backdrop of majestic mountains.'
+        Prompt: 'Highlight mannequin in white blazer, navy tie against luxurious blurred setting with golden-lit windows.'
       },
       {
         index: 8,
         imageSrc: 'https://uploads-ssl.webflow.com/64e450ddc010cccff1436923/64f61d5bfd1a9e1d8a99f096_64d4c4ce3db16cd019282e48_image16.png',
         Filter: 'Outdoor Gear',
-        Prompt: 'A cube sound box speaker on giant rocks with mountains in background.'
+        Prompt: 'Small black cylindrical speaker perched on colossal giant rocks against a backdrop of lush green mountains, softly blurred in the background.'
       },
       {
         index: 9,
         imageSrc: 'https://uploads-ssl.webflow.com/64e450ddc010cccff1436923/64f61d5c6a09de7d0059d1e8_64e292ff1d1c34380e3a70c9_image17.png',
         Filter: 'Perfume',
-        Prompt: 'Foundation Bottle P placed on a flawless marble countertop, with soft focus lighting, clean and luxurious.'
+        Prompt: 'Small Perfume Bottle placed on a flawless marble countertop, with soft focus lighting, clean and luxurious in kitchen.'
       },
       {
         index: 10,
         imageSrc: 'https://uploads-ssl.webflow.com/64e450ddc010cccff1436923/64f61d5beae84ff69509ca48_64e2931deba14476cc66f931_image18.png',
         Filter: 'Fashion',
-        Prompt: 'The top hanging in a hanger with wooden support in front of beach trees.'
+        Prompt: 'White top paired with a designer skirt elegantly hung on a wooden support, set against a backdrop of beach trees.'
       },
       {
         index: 11,
         imageSrc: 'https://uploads-ssl.webflow.com/64e450ddc010cccff1436923/64f61d5c04fd50fca0d0cfe5_64e2933391da0d8fe41ee834_image19.png',
         Filter: 'Candle',
-        Prompt: 'The nature-inspired chronograph watch is showcased against a backdrop of majestic mountains.'
+        Prompt: 'Showcase a large purple candle surrounded by white, yellow flowers on marble, set against softly blurred walls with a textured purple backdrop.'
       },
       {
         index: 12,
         imageSrc: 'https://uploads-ssl.webflow.com/64e450ddc010cccff1436923/64f61d5c849457fb58586e48_64e28c73d463383a21b0b6b0_image2.png',
         Filter: 'Kitchenware',
-        Prompt: 'The nature-inspired chronograph watch is showcased against a backdrop of majestic mountains.'
+        Prompt: 'The focused Collins on Gas Burner placed on the kitchen table showcased in the blurred kitchen with all necessary kitchen items with windows.'
       },
       {
         index: 13,
         imageSrc: 'https://uploads-ssl.webflow.com/64e450ddc010cccff1436923/64f61d5c849457fb58586f66_64e2934d242e4af9b6520f08_image20.png',
         Filter: 'Tech & gadgets',
-        Prompt: 'The nature-inspired chronograph watch is showcased against a backdrop of majestic mountains.'
+        Prompt: 'Spotlight vibrant blue simple headphones against a majestic, softly blurred blue backdrop.'
       },
       {
         index: 14,
         imageSrc: 'https://uploads-ssl.webflow.com/64e450ddc010cccff1436923/64f61d5d689fbf402b5bfdd3_64e29365d5f18f066957c9f9_image21.png',
         Filter: 'Watch',
-        Prompt: 'Classic watch in focus with luxury dim light on the table.'
+        Prompt: 'Classic watch in focus with luxury dim light on the table with dark blurred background.'
       },
       {
         index: 15,
         imageSrc: 'https://uploads-ssl.webflow.com/64e450ddc010cccff1436923/64f61d5d7a84a7b5f5f21de1_64e293874cc90679fbdc566a_image22.png',
         Filter: 'Home Appliances',
-        Prompt: 'The nature-inspired chronograph watch is showcased against a backdrop of majestic mountains.'
+        Prompt: 'Highlight a large television alongside a lamp, curtain, and classic wooden cupboard in a glamorous living room setting with softly blurred walls.'
       },
       {
         index: 16,
         imageSrc: 'https://uploads-ssl.webflow.com/64e450ddc010cccff1436923/64f61d5d2c679a2067a956a3_64e293a54cc90679fbdc6663_image23.png',
         Filter: 'Fashion',
-        Prompt: 'The nature-inspired chronograph watch is showcased against a backdrop of majestic mountains.'
+        Prompt: 'Black T-Shirt in hanger placed against vibrant and artistic graffiti-covered walls.'
       },
       {
         index: 17,
         imageSrc: 'https://uploads-ssl.webflow.com/64e450ddc010cccff1436923/64f61d5d7a39e55de0aee71b_64e293bbafe3bbe18512c84e_image24.png',
         Filter: 'Watch',
-        Prompt: 'Premium golden watch in focus with luxury dim and glamorous light.'
+        Prompt: 'Premium golden women watch in focus placed vertical with luxury black, golden, dim and glamorous hub hub light background.'
       },
       {
         index: 18,
         imageSrc: 'https://uploads-ssl.webflow.com/64e450ddc010cccff1436923/64f61d5dfd1a9e1d8a99f204_64e293d1bcf173db90f4c5c8_image25.png',
         Filter: 'Kitchenware',
-        Prompt: 'The nature-inspired chronograph watch is showcased against a backdrop of majestic mountains.'
+        Prompt: 'The focused big knife placed on the kitchen table showcased in the blurred kitchen with all necessary kitchen items with windows.'
       },
       {
         index: 19,
         imageSrc: 'https://uploads-ssl.webflow.com/64e450ddc010cccff1436923/64f61d5d431b2bbe07ac4d5d_64e293ed91da0d8fe41f6343_image26.png',
         Filter: 'Perfume',
-        Prompt: 'Foundation Bottle focused placed on colorful flowers.'
+        Prompt: 'Focused Perfume bottle positioned on a blurred background that accentuates the bottle prominence while immersed in the lively hues of blossoming flowers.'
       },
       {
         index: 20,
         imageSrc: 'https://uploads-ssl.webflow.com/64e450ddc010cccff1436923/64f61d5e7a39e55de0aee7de_64e29408344c637a5c3159d1_image27.png',
         Filter: 'Outdoor Gear',
-        Prompt: 'The nature-inspired chronograph watch is showcased against a backdrop of majestic mountains.'
+        Prompt: 'Focused bottle positioned on a mat with fruits bucket blurred background in open  nature garden with benches and peoples.'
       },
       {
         index: 21,
         imageSrc: 'https://uploads-ssl.webflow.com/64e450ddc010cccff1436923/64f61d5e8eb3ea391a3f6a89_64e2942ceba14476cc67ce2f_image28.png',
         Filter: 'Watch',
-        Prompt: 'Classic sport watch in the hand of a man standing in nature with blissful sunlight.'
+        Prompt: 'Focused Classic sport watch in the hand of a man standing in nature with blissful sunlight.'
       },
       {
         index: 22,
         imageSrc: 'https://uploads-ssl.webflow.com/64e450ddc010cccff1436923/64f61d5ec15266ea1eb32a5c_64e2944c7242c2a9ca7100df_image29.png',
         Filter: 'Sports',
-        Prompt: 'The sports-inspired basketball against cool graffiti walls.'
+        Prompt: 'Sports-inspired  basketball placed against vibrant and artistic graffiti-covered walls.'
       },
       {
         index: 23,
@@ -141,19 +141,19 @@ export const imageArray = [
         index: 24,
         imageSrc: 'https://uploads-ssl.webflow.com/64e450ddc010cccff1436923/64f61d5f7a39e55de0aee866_64e2946f6f9e84517abefa97_image30.png',
         Filter: 'Skincare and cosmetics',
-        Prompt: 'The nature-inspired chronograph Facewash is showcased against a backdrop of majestic mountains.'
+        Prompt: 'The nature-inspired Facewash is showcased against a backdrop of majestic mountains.'
       },
       {
         index: 25,
         imageSrc: 'https://uploads-ssl.webflow.com/64e450ddc010cccff1436923/64f61d5f0cd85c0a4fa5f428_64e29487e551e36f5d6b59d2_image31.png',
         Filter: 'Skincare and cosmetics',
-        Prompt: 'The inspired nail polish is showcased against a backdrop of shiny glamorous pink blue background.'
+        Prompt: "The inspired nail polish is showcased against a backdrop of shiny glamorous hub hub pink blue background."
       },
       {
         index: 26,
         imageSrc: 'https://uploads-ssl.webflow.com/64e450ddc010cccff1436923/64f61d5f7a84a7b5f5f2253d_64e2949d1d1c34380e3babdf_image32.png',
         Filter: 'Fashion',
-        Prompt: 'A Top in hanger is showcased against beautiful beach with trees.'
+        Prompt: 'A white girl top with skirt in hanger is showcased against beautiful beach with trees.'
       },
       {
         index: 27,
@@ -171,7 +171,7 @@ export const imageArray = [
         index: 29,
         imageSrc: 'https://uploads-ssl.webflow.com/64e450ddc010cccff1436923/64f61d60431b2bbe07ac5065_64e29511da2842976ef6b730_image35.png',
         Filter: 'Baby',
-        Prompt: ''
+        Prompt: 'Focused feeding bottle placed on a table. The backdrop showcases a luxurious wooden baby bed rails against the backdrop of large windows revealing a serene natural landscape.'
       },
       {
         index: 30,
@@ -185,17 +185,11 @@ export const imageArray = [
         Filter: 'Watch',
         Prompt: 'The nature-inspired chronograph watch is showcased against a backdrop of majestic mountains.'
       },
-      {
-        index: 32,
-        imageSrc: 'https://uploads-ssl.webflow.com/64e450ddc010cccff1436923/64f61d600cd85c0a4fa5f4da_64e29554344c637a5c325e6c_image38.png',
-        Filter: 'Beverage',
-        Prompt: 'A coffee on a bench is showcased against a backdrop in clear sky.'
-      },
-      {
-        index: 33,
-        imageSrc: 'https://uploads-ssl.webflow.com/64e450ddc010cccff1436923/64f61d5f8dae7c6d5a63bccb_64e294beafe3bbe18513965a_image33.png',
-        Filter: 'Shoes',
-        Prompt: 'A focused cool white sneaker with colorful graphics in hub hub streets at night.'
-      },
+      // {
+      //   index: 32,
+      //   imageSrc: 'https://uploads-ssl.webflow.com/64e450ddc010cccff1436923/64f61d600cd85c0a4fa5f4da_64e29554344c637a5c325e6c_image38.png',
+      //   Filter: 'Beverage',
+      //   Prompt: 'A coffee on a bench is showcased against a backdrop in clear sky.'
+      // },
     
 ]

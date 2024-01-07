@@ -32,22 +32,23 @@ const FilterButtons: React.FC<FilterButtonsProps> = ({
 
   return (
     <>
-      <div className="hidden md:block fixed z-40 mt-20">
-        <div className="flex flex-col  space-y-2 py-4 ">
-          <label className="block font-bold">Filter Product Category:</label>
-          {categories.map((category, index) => (
-            <div key={index} className="flex ml-2  items-center space-x-2">
-              <input
-                type="checkbox"
-                id={`category-${index}`}
-                value={category}
-                onChange={handleCheckboxChange}
-              />
-              <label htmlFor={`category-${index}`}>{category}</label>
-            </div>
-          ))}
-        </div>
+<div className="hidden md:block fixed z-40 mt-20  overflow-y-auto">
+  <div className="flex flex-col space-y-2 py-4">
+    <label className="block font-bold">Filter Product Category:</label>
+    {categories.map((category, index) => (
+      <div key={index} className="flex ml-2 items-center space-x-2">
+        <input
+          type="checkbox"
+          id={`category-${index}`}
+          value={category}
+          onChange={handleCheckboxChange}
+        />
+        <label htmlFor={`category-${index}`}>{category}</label>
       </div>
+    ))}
+  </div>
+</div>
+
     </>
   );
 };
