@@ -32,7 +32,7 @@ const FilterButtons: React.FC<FilterButtonsProps> = ({
 
   return (
     <>
-<div className="hidden md:block fixed z-40 mt-20  overflow-y-auto">
+<div className="hidden md:block fixed z-40 mt-20 lg:px-4 overflow-y-auto h-5/6">
   <div className="flex flex-col space-y-2 py-4">
     <label className="block font-bold">Filter Product Category:</label>
     {categories.map((category, index) => (
@@ -46,8 +46,11 @@ const FilterButtons: React.FC<FilterButtonsProps> = ({
         <label htmlFor={`category-${index}`}>{category}</label>
       </div>
     ))}
+    {/* Add more content here if needed */}
   </div>
 </div>
+
+
 
     </>
   );

@@ -3,7 +3,7 @@ import { FaRegCopy } from "react-icons/fa";
 
 interface PortfolioItemProps {
   imageSrc: string;
-  filter: string;
+  filter: string | undefined;
   prompt: string;
   loading?: 'lazy' | 'eager';
 }

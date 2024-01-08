@@ -47,10 +47,10 @@ export const categories = [
     'Home Appliances',
     'Home Decor',
     // 'Homeware',
-    // 'Jewelry',
+    'Jewelry',
     'Kitchenware',
     // 'Musical Instruments',
-    'Outdoor Gear',
+    'Outdoor',
     // 'Party',
     'Perfume',
     // 'Pet Supplies',
@@ -60,6 +60,13 @@ export const categories = [
     // 'Stationery',
     'Tech & gadgets',
     // 'Toys',
-    'Watch'
+    'Fantasy',
+    'Watch',
+    'Animals',
+    'India',
+    'Nature',
+    'Space',
+    'Abstract',
+    'Flower'
   ];
   

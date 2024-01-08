@@ -39,14 +39,14 @@ const PortfolioPage: React.FC = () => {
   const filteredItems =
     activeFilters.length === 0
       ? items
-      : items.filter((item) => activeFilters.includes(item.Filter));
+      : items.filter((item) => item.Filter && activeFilters.includes(item.Filter));
 
   return (
     <div className="">
       <Header />
-      <div className="flex flex-1 overflow-hidden">
+      <div className="flex flex-1">
         {/* Sidebar */}
-        <div className="w-1/5 hidden lg:block  p-4 overflow-y-auto">
+        <div className="w-1/5 hidden lg:block p-4 overflow-y-auto max-h-screen">
           <FilterButtons
             setActiveFilters={setActiveFilters}
             categories={categories}
@@ -111,7 +111,7 @@ const PortfolioPage: React.FC = () => {
                 imageSrc={item.imageSrc}
                 filter={item.Filter}
                 prompt={item.Prompt}
-                loading="lazy"
+                 loading="lazy"
               />
             ))}
           </div>
