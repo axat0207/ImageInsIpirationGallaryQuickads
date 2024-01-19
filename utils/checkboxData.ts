@@ -40,6 +40,7 @@
 
 export const categories = [
     'Beverage',
+    'Saas',
     'Candle',
     'Cosmetics',
     'Fashion',

@@ -507,16 +507,22 @@ export const imageArray = [
         Filter: 'India',
         Prompt: 'picture of an indian girl, 2 years old, sitting in park filled with greenery and flowers, drawing picture of her grand father and grand mother on canvas mounted on pink wooden frame, realistic,4k'
       },
-      // {
-      //   index: 88,
-      //   imageSrc: "",
-      //   Filter: '',
-      //   Prompt: ''
-      // },{
-      //   index: 89,
-      //   imageSrc: "",
-      //   Filter: '',
-      //   Prompt: ''
-      // },
-
+      {
+        index: 88,
+        imageSrc: "https://i.postimg.cc/4xRM3zGj/saas-computer-quickads.png",
+        Filter: 'Saas',
+        Prompt: 'Over the shoulder shot of a person in front of an entirely green computer screen'
+      },
+      {
+        index: 89,
+        imageSrc: "https://i.postimg.cc/SRyq6KnL/mobile-saas-final.png",
+        Filter: 'Saas',
+        Prompt: 'Over the shoulder shot of a person holding an iPhone with a completely green screen'
+      },
+      {
+        index: 90,
+        imageSrc: "https://i.postimg.cc/MZP6nBm5/Screenshot-2024-01-08-194022.png",
+        Filter: 'Saas',
+        Prompt: 'Over the shoulder shot of a person holding an iPhone with a completely green screen'
+      },
 ]
