@@ -525,4 +525,10 @@ export const imageArray = [
         Filter: 'Saas',
         Prompt: 'Over the shoulder shot of a person holding an iPhone with a completely green screen'
       },
+      {
+        index: 91,
+        imageSrc: "https://i.postimg.cc/8P0kSpbp/computer-image.jpg",
+        Filter: 'Saas',
+        Prompt: 'Over the shoulder shot of a person in front of an entirely green computer screen'
+      },
 ]
